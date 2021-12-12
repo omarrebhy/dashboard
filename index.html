@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <div class="user-content">
+                <div class="user-img">
+                    <img src="./image/admin.jpg" alt="UserImage">
+                </div>
+                <div class="cursor control">
+                    Admin <i class="fa fa-chevron-down">
+                        <div class="user-control">
+                            <ul>
+                                <li>Profile</li>
+                                <li>Setting</li>
+                                <li>Logout</li>
+                            </ul>
+                        </div>
+                    </i></div>
+                <i class="far fa-bell cursor"></i>
+            </div>
+            <div class="search-box">
+                <input type="search" placeholder="البحث... ">
+                <i class="fa fa-search"></i></i>
+            </div>
+            <div class="burger cursor">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <div class="sidebar">
+            <div class="side-img">
+                <img src="./image/logo1.jpg"  alt="">
+            </div>
+
+            <div class="side-bar-items">
+                <ul>
+                    <li>
+                        الصفحه الرئيسيه
+                        <i class="fa fa-home"></i>
+                    </li>
+                    <li style="width: 90%; margin-top: 5px;">
+                     الاطباء
+                     <i class="fas fa-stethoscope"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="drop">
+        <div class="home">
+            <p>الاطباء</p>
+            <h6>الرئيسية/الاطباء</h6>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Small button groups (default and split) -->
+                    <div class="btn-group">
+                        <input type="text" placeholder="اسم الطبيب">
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-expanded="false">
+                                التخصص
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-expanded="false">
+                                المنطقة
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="table">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-bordered">
+                        <thead class="bg-light">
+                            <tr>
+                                <th scope="col">اسم الدكتور</th>
+                                <th scope="col">ايميل</th>
+                                <th scope="col">التخصص</th>
+                                <th scope="col">المحاقظة</th>
+                                <th scope="col">المستوي العلمي</th>
+                                <th scope="col">العمر</th>
+                                <th scope="col">الجنس</th>
+                                <th scope="col">التقيمات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><label for="" class="btn-group">
+                                        <button type="button" class="btn btn-primary">accept</button>
+                                        <button type="button" class="btn btn-danger">reject</button>
+                                    </label></td>
+                            </tr>
+                            <tr>
+
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><label for="" class="btn-group">
+                                        <button type="button" class="btn btn-primary">accept</button>
+                                        <button type="button" class="btn btn-danger">reject</button>
+                                    </label></td>
+                            </tr>
+                            <tr>
+                                <td colspan="8" class="accpted text-primary ">accepted doctors </td>
+                            </tr>
+                            <tr>
+
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td>
+                                    <label class="rating-label">
+                                        <input class="rating" max="5"
+                                            oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
+                                            step="0.5" style="--value:2.5" type="range" value="2.5">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td>
+                                    <label class="rating-label">
+                                        <input class="rating" max="5"
+                                            oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
+                                            step="0.5" style="--value:2.5" type="range" value="2.5">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td>
+                                    <label class="rating-label">
+                                        <input class="rating" max="5"
+                                            oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
+                                            step="0.5" style="--value:2.5" type="range" value="2.5">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td>
+                                    <label class="rating-label">
+                                        <input class="rating" max="5"
+                                            oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
+                                            step="0.5" style="--value:2.5" type="range" value="2.5">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td>
+                                    <label class="rating-label">
+                                        <input class="rating" max="5"
+                                            oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
+                                            step="0.5" style="--value:2.5" type="range" value="2.5">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td>
+                                    <label class="rating-label">
+                                        <input class="rating" max="5"
+                                            oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
+                                            step="0.5" style="--value:2.5" type="range" value="2.5">
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var burger = document.querySelector(".burger");
+        burger.onclick = function(){
+            document.querySelector(".sidebar").classList.toggle("active");
+            if(document.querySelector(".sidebar").classList.contains("active")){
+                document.querySelector(".header").style.maxWidth="80%";
+            }else{
+                document.querySelector(".header").style.maxWidth="100%";
+            }
+            
+        }
+    </script>
+
+
+
+
+
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
